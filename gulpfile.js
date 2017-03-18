@@ -23,7 +23,7 @@ gulp.task('sass', function () {
 gulp.task('watch',function(){
 	gulp.watch('./src/sass/*.sass',['sass'])
 	gulp.watch('./public/**/*.html',['html'])
-	gulp.watch('./src/js/script.js',['browserify'])
+	gulp.watch('./src/js/main.js',['browserify'])
 })
 
 
@@ -36,11 +36,9 @@ gulp.task('html', function() {
 
 //Browserify
 gulp.task('browserify', function() {
-    return browserify('./src/js/script.js')
+    return browserify('./src/js/main.js')
         .bundle()
-        //Pass desired output filename to vinyl-source-stream
-        .pipe(source('script.js'))
-        // Start piping stream to tasks!
+        .pipe(source('main.js'))
         .pipe(gulp.dest('./public/js/'))
         .pipe(connect.reload());
 });
@@ -69,4 +67,4 @@ gulp.task('mini-css', function () {
 
 
 //default
-gulp.task('default',['watch','server','browserify','sass','mini-css'])
+gulp.task('default',['watch','lint','server','browserify','sass','mini-css'])
