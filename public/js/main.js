@@ -79,5 +79,8 @@ function init(){
 	} ,2000)
 }
 
-init();
+window.onload = function() {
+	init();
+	document.body.className = "loaded"
+}
 },{"./_render.js":3}]},{},[4]);

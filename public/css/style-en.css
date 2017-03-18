@@ -32,6 +32,8 @@ body {
   -webkit-transition: all 500ms;
   transition: all 500ms;
   background-color: #191919;
+}
+body.loaded {
   -webkit-animation: perspective 6s ease-out 2s alternate infinite;
           animation: perspective 6s ease-out 2s alternate infinite;
 }

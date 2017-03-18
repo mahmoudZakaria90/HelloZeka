@@ -9,4 +9,7 @@ function init(){
 	} ,2000)
 }
 
-init();
+window.onload = function() {
+	init();
+	document.body.className = "loaded"
+}
