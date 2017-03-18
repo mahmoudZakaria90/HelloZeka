@@ -3,7 +3,9 @@ require('./_render.js');
 
 
 function init(){
-	document.getElementsByTagName('audio')[0].volume = .1;
+	var audio = document.getElementsByTagName('audio')[0];
+	audio.play();
+	audio.volume = .1;
 	setTimeout(function(){
 		document.querySelector('.intro').className += ' display';
 	} ,2000)
