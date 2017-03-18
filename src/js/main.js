@@ -9,4 +9,4 @@ function init(){
 	} ,2000)
 }
 
-window.onload = init;
+init();
