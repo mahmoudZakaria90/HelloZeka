@@ -541,14 +541,14 @@ button {
 /* @keyframes & transitions */
 @-webkit-keyframes perspective {
   100% {
-    -webkit-perspective: 2000px;
-            perspective: 2000px;
+    -webkit-perspective: 800px;
+            perspective: 800px;
   }
 }
 @keyframes perspective {
   100% {
-    -webkit-perspective: 2000px;
-            perspective: 2000px;
+    -webkit-perspective: 800px;
+            perspective: 800px;
   }
 }
 /*Regular give.css */
