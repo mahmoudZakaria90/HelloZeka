@@ -44,7 +44,12 @@ var data = [
 	{name: 'insta.png', url: 'https://www.instagram.com/m.zakria90/'},
 	{name: 'whats.png', url: 'https://web.whatsapp.com/'},
 	{name: 'trans.png', url: 'https://translate.google.com.eg/?rlz=1C5CHFA_enEG727EG727&ion=1&espv=2&um=1&ie=UTF-8&hl=en&client=tw-ob#auto/en/'},
-	{name: 'w3.jpg', url: 'https://www.w3schools.com/'}
+	{name: 'w3.jpg', url: 'https://www.w3schools.com/'},
+	{name: 'google.png', url: 'https://www.google.com'},
+	{name: 'wiki.png', url: 'http://wiki.hh.arvm.de/bin/view/ProjectsRnD/o2+Games+Documentation'},
+	{name: 'people.png', url:'https://www.peopleperhour.com/freelancer/mahmoud/front-end-developer-ui-ux-designer/1526559'},
+	{name: 'ng.png', url: 'https://angular.io/docs/ts/latest/guide/learning-angular.html'},
+	{name: 'type.svg', url: 'https://www.typescriptlang.org/docs/handbook/basic-types.html'}
 ];
 
 module.exports = data;
