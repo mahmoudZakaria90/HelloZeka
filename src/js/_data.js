@@ -18,7 +18,8 @@ var data = [
 	{name: 'wiki.png', url: 'http://wiki.hh.arvm.de/bin/view/ProjectsRnD/o2+Games+Documentation'},
 	{name: 'people.png', url:'https://www.peopleperhour.com/freelancer/mahmoud/front-end-developer-ui-ux-designer/1526559'},
 	{name: 'ng.png', url: 'https://angular.io/docs/ts/latest/guide/learning-angular.html'},
-	{name: 'type.svg', url: 'https://www.typescriptlang.org/docs/handbook/basic-types.html'}
+	{name: 'type.svg', url: 'https://www.typescriptlang.org/docs/handbook/basic-types.html'},
+	{name: 'stack.png', url: 'http://stackoverflow.com/'}
 ];
 
 module.exports = data;
