@@ -19,7 +19,8 @@ var data = [
 	{name: 'people.png', url:'https://www.peopleperhour.com/freelancer/mahmoud/front-end-developer-ui-ux-designer/1526559'},
 	{name: 'ng.png', url: 'https://angular.io/docs/ts/latest/guide/learning-angular.html'},
 	{name: 'type.svg', url: 'https://www.typescriptlang.org/docs/handbook/basic-types.html'},
-	{name: 'stack.png', url: 'http://stackoverflow.com/'}
+	{name: 'stack.png', url: 'http://stackoverflow.com/'},
+	{name: 'vue.png', url: 'https://vuejs.org/v2/guide/'}
 ];
 
 module.exports = data;
