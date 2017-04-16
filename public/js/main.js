@@ -51,7 +51,10 @@ var data = [
 	{name: 'ng.png', url: 'https://angular.io/docs/ts/latest/guide/learning-angular.html'},
 	{name: 'type.svg', url: 'https://www.typescriptlang.org/docs/handbook/basic-types.html'},
 	{name: 'stack.png', url: 'http://stackoverflow.com/'},
-	{name: 'vue.png', url: 'https://vuejs.org/v2/guide/'}
+	{name: 'vue.png', url: 'https://vuejs.org/v2/guide/'},
+	{name: 'mdn.png', url: 'https://developer.mozilla.org/en-US/'},
+	{name: 'info.png', url: 'http://javascript.info/closure'},
+	{name: 'babel.png', url: 'https://babeljs.io/learn-es2015/'}
 ];
 
 module.exports = data;
