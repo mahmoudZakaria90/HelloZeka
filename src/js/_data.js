@@ -4,7 +4,7 @@ var data = [
 	{name: 'h4p.jpeg', url: 'http://h4p.mondiamedia.com:8080/TT/business'},
 	{name: 'codepen.png', url: 'http://codepen.io/Mahmoud-Zakaria/pens/public/'},
 	{name: 'gmail.jpg', url: 'https://mail.google.com/mail/u/0/#inbox'},
-	{name: 'site.png', url: 'https://mahmoudzakaria90.github.io/onlineResume/'},
+	{name: 'site.png', url: 'https://mahmoudzakaria90.github.io/personalsite/'},
 	{name: 'twitter.png', url: 'https://twitter.com/zekas90'},
 	{name: 'linkedin.png', url: 'https://www.linkedin.com/in/mahmoud-zakaria-04454599/'},
 	{name: 'youtube.png', url: 'https://www.youtube.com'},
