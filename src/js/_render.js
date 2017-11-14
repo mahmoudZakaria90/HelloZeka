@@ -3,7 +3,7 @@ var data = require('./_data.js');
 
 var render = (function(){
 	for (var i = 0; i < box.length; i++) {
-		var _random = Math.random() * box.length;
+		var _random = Math.floor(Math.random() * box.length * 8);
 		var _random2 = Math.floor(Math.random() * data.length);
 		var el = box.create();
 		el.id = 'box' + i;

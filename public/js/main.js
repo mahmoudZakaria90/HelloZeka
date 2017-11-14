@@ -2,12 +2,12 @@
 var box = (function(){
 
 	//box MetaData
-	var _boxWidth = 55;
-	var _boxHeight = 55;
+	var _boxWidth = 100;
+	var _boxHeight = 100;
 
 	//box quan
-	var _boxQuanHorz = Math.floor((window.innerWidth  / 2)/ _boxWidth);
-	var _boxQuanVert = Math.floor((window.innerHeight / 2) / _boxHeight);
+	var _boxQuanHorz = Math.floor((window.innerWidth )/ _boxWidth);
+	var _boxQuanVert = Math.floor((window.innerHeight) / _boxHeight);
 	var len = _boxQuanHorz * _boxQuanVert;
 
 	//box creation
@@ -65,7 +65,7 @@ var data = require('./_data.js');
 
 var render = (function(){
 	for (var i = 0; i < box.length; i++) {
-		var _random = Math.random() * box.length;
+		var _random = Math.floor(Math.random() * box.length * 8);
 		var _random2 = Math.floor(Math.random() * data.length);
 		var el = box.create();
 		el.id = 'box' + i;
