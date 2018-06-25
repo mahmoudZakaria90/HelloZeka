@@ -19,11 +19,11 @@ gulp.task('sass', function () {
 
 
 
-//watch 
+//watch
 gulp.task('watch',function(){
 	gulp.watch('./src/sass/*.sass',['sass'])
 	gulp.watch('./public/**/*.html',['html'])
-	gulp.watch('./src/js/main.js',['browserify'])
+	gulp.watch('./src/**/*.js',['browserify'])
 })
 
 
@@ -50,7 +50,7 @@ gulp.task('lint', function() {
     .pipe(notificator())
 });
 
-//Localhost 
+//Localhost
 gulp.task('server',function(){
 	connect.server({
 		root: 'public',

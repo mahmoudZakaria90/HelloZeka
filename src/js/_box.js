@@ -1,12 +1,12 @@
 var box = (function(){
 
 	//box MetaData
-	var _boxWidth = 100;
-	var _boxHeight = 100;
+	var _boxWidth = 70;
+	var _boxHeight = 70;
 
 	//box quan
-	var _boxQuanHorz = Math.floor((window.innerWidth )/ _boxWidth);
-	var _boxQuanVert = Math.floor((window.innerHeight) / _boxHeight);
+	var _boxQuanHorz = Math.floor( ( ( window.innerWidth ) / 2 )/ _boxWidth );
+	var _boxQuanVert = Math.floor( ( ( window.innerHeight) / 2 )/ _boxHeight );
 	var len = _boxQuanHorz * _boxQuanVert;
 
 	//box creation

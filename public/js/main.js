@@ -1,13 +1,13 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 var box = (function(){
 
 	//box MetaData
-	var _boxWidth = 100;
-	var _boxHeight = 100;
+	var _boxWidth = 70;
+	var _boxHeight = 70;
 
 	//box quan
-	var _boxQuanHorz = Math.floor((window.innerWidth )/ _boxWidth);
-	var _boxQuanVert = Math.floor((window.innerHeight) / _boxHeight);
+	var _boxQuanHorz = Math.floor( ( ( window.innerWidth ) / 2 )/ _boxWidth );
+	var _boxQuanVert = Math.floor( ( ( window.innerHeight) / 2 )/ _boxHeight );
 	var len = _boxQuanHorz * _boxQuanVert;
 
 	//box creation
@@ -28,6 +28,7 @@ var box = (function(){
 })();
 
 module.exports = box;
+
 },{}],2:[function(require,module,exports){
 var data = [
 	{name: 'jira.png', url: 'https://jira.mondiamedia.com/secure/Dashboard.jspa'},
@@ -65,7 +66,7 @@ var data = require('./_data.js');
 
 var render = (function(){
 	for (var i = 0; i < box.length; i++) {
-		var _random = Math.floor(Math.random() * box.length * 8);
+		var _random = Math.floor(Math.random() * box.length * 50);
 		var _random2 = Math.floor(Math.random() * data.length);
 		var el = box.create();
 		el.id = 'box' + i;
@@ -78,6 +79,7 @@ var render = (function(){
 })();
 
 module.exports = render;
+
 },{"./_box.js":1,"./_data.js":2}],4:[function(require,module,exports){
 //Entry
 require('./_render.js');
@@ -96,4 +98,5 @@ window.onload = function() {
 	init();
 	document.body.className = "loaded"
 }
+
 },{"./_render.js":3}]},{},[4]);
