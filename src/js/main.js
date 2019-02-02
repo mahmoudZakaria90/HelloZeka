@@ -3,15 +3,14 @@ require('./_render.js');
 
 
 function init(){
-	var audio = document.getElementsByTagName('audio')[0];
-	audio.play();
-	audio.volume = .5;
-	setTimeout(function(){
-		document.querySelector('.intro').className += ' display';
-	} ,2000)
+	const message = new SpeechSynthesisUtterance('Good evening, Zakaria what do you seek?');
+	speechSynthesis.speak(message);
+	message.onend = function() {
+		document.querySelector('.intro').className += ' hide';
+		document.body.className = "loaded";
+	}
 }
 
 window.onload = function() {
 	init();
-	document.body.className = "loaded"
 }
