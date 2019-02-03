@@ -2,8 +2,8 @@
 var box = (function(){
 
 	//box MetaData
-	var _boxWidth = 70;
-	var _boxHeight = 70;
+	var _boxWidth = 40;
+	var _boxHeight = 40;
 
 	//box quan
 	var _boxQuanHorz = Math.floor( ( ( window.innerWidth ) / 2 )/ _boxWidth );
@@ -66,7 +66,7 @@ var data = require('./_data.js');
 
 var render = (function(){
 	for (var i = 0; i < box.length; i++) {
-		var _random = Math.floor(Math.random() * box.length * 50);
+		var _random = Math.floor(Math.random() * box.length * 20);
 		var _random2 = Math.floor(Math.random() * data.length);
 		var el = box.create();
 		el.id = 'box' + i;
@@ -84,9 +84,8 @@ module.exports = render;
 //Entry
 require('./_render.js');
 
-
 function init(){
-	const message = new SpeechSynthesisUtterance('Good evening, Zakaria what do you seek?');
+	const message = new SpeechSynthesisUtterance('Good evening, Zeekaas what do you seek?');
 	window.speechSynthesis.speak(message);
 	message.onend = function() {
 		document.querySelector('.intro').className += ' hide';
@@ -94,8 +93,8 @@ function init(){
 	}
 }
 
-window.onmousemove = function() {
-	init();
-}
+window.addEventListener('mousemove', init, {
+	once: true
+})
 
 },{"./_render.js":3}]},{},[4]);

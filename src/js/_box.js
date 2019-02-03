@@ -1,8 +1,8 @@
 var box = (function(){
 
 	//box MetaData
-	var _boxWidth = 70;
-	var _boxHeight = 70;
+	var _boxWidth = 40;
+	var _boxHeight = 40;
 
 	//box quan
 	var _boxQuanHorz = Math.floor( ( ( window.innerWidth ) / 2 )/ _boxWidth );
