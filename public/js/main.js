@@ -66,7 +66,7 @@ var data = require('./_data.js');
 
 var render = (function(){
 	for (var i = 0; i < box.length; i++) {
-		var _random = Math.floor(Math.random() * box.length * 20);
+		var _random = Math.floor(Math.random() * box.length * 50);
 		var _random2 = Math.floor(Math.random() * data.length);
 		var el = box.create();
 		el.id = 'box' + i;
@@ -85,16 +85,11 @@ module.exports = render;
 require('./_render.js');
 
 function init(){
-	const message = new SpeechSynthesisUtterance('Good evening, Zeekaas what do you seek?');
-	window.speechSynthesis.speak(message);
-	message.onend = function() {
-		document.querySelector('.intro').className += ' hide';
-		document.body.className = "loaded";
-	}
+	document.querySelector('.intro').className += ' hide';
+	document.body.className = "loaded";
 }
 
-window.addEventListener('mousemove', init, {
-	once: true
-})
-
+window.onload = function() {
+	init()
+}
 },{"./_render.js":3}]},{},[4]);
