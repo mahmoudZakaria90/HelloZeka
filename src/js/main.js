@@ -2,7 +2,7 @@
 require('./_render.js');
 
 const audio = new Audio();
-audio.src = './public/audio/hello.mp3';
+audio.src = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/306097/hello.mp3';
 function init(){
 	this.play();
 	document.querySelector('.intro').className += ' hide';
