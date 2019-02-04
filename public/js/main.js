@@ -86,5 +86,5 @@ function init(){
 	document.body.className = "loaded";
 }
 
-audio.addEventListener('loadedmetadata', init);
+document.addEventListener('mousemove', init, {once: true});
 },{"./_render.js":3}]},{},[4]);
