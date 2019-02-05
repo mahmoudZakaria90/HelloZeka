@@ -53,7 +53,7 @@ gulp.task('lint', function() {
 //Localhost
 gulp.task('server',function(){
 	connect.server({
-		root: '.',
+		root: './public',
 		livereload: true
 	})
 })
