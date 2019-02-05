@@ -5,4 +5,4 @@ function init(){
 	document.querySelector('.intro').className += ' hide';
 	document.body.className = "loaded";
 }
-document.addEventListener('load', init);
+window.addEventListener('load', init);
