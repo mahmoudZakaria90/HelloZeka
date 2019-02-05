@@ -78,7 +78,9 @@ module.exports = render;
 require('./_render.js');
 
 function init(){
-	document.querySelector('.intro').className += ' hide';
+	setTimeout(function(){
+		document.querySelector('.intro').className += ' hide';
+	}, 2000)
 	document.body.className = "loaded";
 }
 window.addEventListener('load', init);
